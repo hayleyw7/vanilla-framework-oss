@@ -79,6 +79,127 @@
   <span class="p-code-snippet__line">!</span></code></pre>
     </div>
 
+    <!-- code snippet dropdown -->
+
+    <div>
+      <div class="p-code-snippet">
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">Creating a code snippet</h5>
+
+        <div class="p-code-snippet__dropdowns">
+          <select class="p-code-snippet__dropdown" name="menu1-select" id="menu1-select">
+            <option value="html-panel">HTML</option>
+            <option value="css-panel">CSS</option>
+            <option value="js-panel">JS</option>
+          </select>
+        </div>
+      </div>
+
+      <pre id="html-panel" class="p-code-snippet__block--numbered is-wrapped"><code>html test</code></pre>
+      <pre id="css-panel" class="p-code-snippet__block u-hide" aria-hidden="true"><code>css test</code></pre>
+      <pre id="js-panel" class="p-code-snippet__block u-hide" aria-hidden="true"><code>js test</code></pre>
+
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">Output</h5>
+      </div>
+
+      <pre class="p-code-snippet__block"><code>Example Life</code></pre>
+    </div>
+
+   <!-- code snippet multiple dropdowns -->
+
+    <div>
+      <div class="p-code-snippet">
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">testing multiple dropdowns</h5>
+
+        <div class="p-code-snippet__dropdowns">
+          <select class="p-code-snippet__dropdown" name="menu1-select" id="menu1-select">
+            <option value="">amd64</option>
+            <option value="">i386</option>
+          </select>
+
+          <select class="p-code-snippet__dropdown" name="menu2-select" id="menu2-select">
+            <option value="stable-panel">stable</option>
+            <option value="beta-panel">beta</option>
+            <option value="edge-panel">edge</option>
+          </select>
+        </div>
+      </div>
+
+      <pre id="stable-panel" class="p-code-snippet__block--icon"><code>one</code></pre>
+
+      <pre id="beta-panel" class="p-code-snippet__block--icon u-hide" aria-hidden="true"><code>two</code></pre>
+
+      <pre id="edge-panel" class="p-code-snippet__block--icon u-hide" aria-hidden="true"><code>three</code></pre>
+    </div>
+
+    <div class="p-code-snippet">
+      <div class="p-code-snippet__header">
+        <div class="p-code-snippet__dropdowns">
+          <select class="p-code-snippet__dropdown" name="menu1-select" id="menu1-select">
+            <option value="">amd64</option>
+            <option value="">i386</option>
+          </select>
+
+          <select class="p-code-snippet__dropdown" name="menu2-select" id="menu2-select">
+            <option value="headerless-stable-panel">stable</option>
+            <option value="headerless-beta-panel">beta</option>
+            <option value="headerless-edge-panel">edge</option>
+          </select>
+        </div>
+      </div>
+
+      <pre id="headerless-stable-panel" class="p-code-snippet__block--icon"><code>multi</code></pre>
+
+      <pre id="headerless-beta-panel" class="p-code-snippet__block--icon u-hide" aria-hidden="true"><code>dropdown</code></pre>
+
+      <pre id="headerless-edge-panel" class="p-code-snippet__block--icon u-hide" aria-hidden="true"><code>examples</code></pre>
+    </div>
+
+    <div class="p-code-snippet">
+      <div class="p-code-snippet__header is-stacked">
+        <h5 class="p-code-snippet__title">varied commands</h5>
+
+        <div class="p-code-snippet__dropdowns">
+          <select class="p-code-snippet__dropdown" name="menu3-select" id="menu3-select">
+            <option value="">amd64</option>
+            <option value="">i386</option>
+          </select>
+
+          <select class="p-code-snippet__dropdown" name="menu4-select" id="menu4-select">
+            <option value="stacked-stable-panel">stable</option>
+            <option value="stacked-beta-panel">beta</option>
+            <option value="stacked-edge-panel">edge</option>
+          </select>
+        </div>
+      </div>
+
+      <pre id="stacked-stable-panel" class="p-code-snippet__block--icon"><code>stable command</code></pre>
+
+      <pre id="stacked-beta-panel" class="p-code-snippet__block--icon u-hide" aria-hidden="true"><code>beta command</code></pre>
+
+      <pre id="stacked-edge-panel" class="p-code-snippet__block--icon u-hide" aria-hidden="true"><code>edge command</code></pre>
+    </div>
+
+    <!-- wrapping -->
+
+    <div class="p-code-snippet">
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">no wrapping</h5>
+      </div>
+      
+      <pre class="p-code-snippet__block"><code>no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping no wrapping</code></pre>
+    </div>
+
+    <div class="p-code-snippet">
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">wrapping</h5>
+      </div>
+
+      <pre class="p-code-snippet__block is-wrapped"><code>wrapping wrapping wrapping wrapping wrapping wrapping wrapping wrapping wrapping wrapping wrapping wrapping wrapping</code></pre>
+    </div>
+
   </section>
 
   <script src="./dist/bundle.js"></script>
