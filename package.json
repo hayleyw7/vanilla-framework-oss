@@ -1,9 +1,12 @@
 {
   "dependencies": {
     "css-loader": "^6.8.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "node-sass": "^9.0.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
+    "snap": "^1.1.0",
     "style-loader": "^3.3.3",
     "vanilla-framework": "^4.5.0",
     "webpack": "^5.89.0",

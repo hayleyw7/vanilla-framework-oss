@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Vanilla using Webpack</title>
 </head>
+
 <body>
   <section class="p-strip--light is-bordered">
     <div class="row">
@@ -12,6 +14,73 @@
       <p>This page has been built using Webpack!</p>
     </div>
   </section>
+
+  <section>
+
+    <!-- code inline -->
+
+    <div class="p-strip--dark" style="background: #111">
+      <div class="row">
+        <div class="col-12">
+          <p style="color: #fff;">The quick brown <code>fox&nbsp;jumps</code> over the lazy dog</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- code block -->
+
+    <pre>const testCodeBlock = () => {
+      console.log("This is a test code block that doesn't do anything.");
+      console.log("This is just here to test code block styling.");
+    }</pre>
+
+    <!-- code snippet -->
+
+    <div class="p-code-snippet">
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">test header</h5>
+      </div>
+
+      <pre class="p-code-snippet__block"><code>test code</code></pre>
+
+      <div class="p-code-snippet__header">
+        <h5 class="p-code-snippet__title">another test header</h5>
+      </div>
+
+      <pre class="p-code-snippet__block"><code>more test code
+    </div>
+
+    <!-- code snippet with icon -->
+
+    <div class="p-code-snippet">
+      <pre class="p-code-snippet__block--icon"><code>git init</code></pre>
+    </div>
+
+    <div class="p-code-snippet">
+      <pre class="p-code-snippet__block--icon is-windows-prompt"><code>git remote -v</code></pre>
+    </div>
+
+    <div class="p-code-snippet">
+      <pre class="p-code-snippet__block--icon is-url">https://www.github.com</pre>
+    </div>
+
+    <!-- numbered code snippet -->
+
+    <div class="p-code-snippet">
+      <pre class="p-code-snippet__block--numbered"><code><span class="p-code-snippet__line">this</span>
+    <span class="p-code-snippet__line">is</span>
+    <span class="p-code-snippet__line">a</span>
+      <span class="p-code-snippet__line">numbered</span>
+      <span class="p-code-snippet__line">coden</span>
+      <span class="p-code-snippet__line">block</span>
+    <span class="p-code-snippet__line">and</span>
+        <span class="p-code-snippet__line">indent</span>
+      <span class="p-code-snippet__line">matters</span>
+  <span class="p-code-snippet__line">!</span></code></pre>
+    </div>
+
+  </section>
+
   <script src="./dist/bundle.js"></script>
 </body>
 </html>
